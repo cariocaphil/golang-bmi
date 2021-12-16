@@ -34,7 +34,8 @@ func main() {
 
 	fmt.Println(reflect.TypeOf(weight))
 
-	fmt.Println(weight)
-	fmt.Println(height)
+	bmi := weight / (height * height)
+
+	fmt.Printf("Your BMI is: %.2f ", bmi)
 
 }

@@ -1,16 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 
 	weight, height := getUserMetrics()
 
 	bmi := calculateBMI(weight, height)
 
-	fmt.Printf("Your BMI is: %.2f ", bmi)
+	printBMI(bmi)
 
 }
 

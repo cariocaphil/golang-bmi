@@ -1,16 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
 	"reflect"
 	"runtime"
 	"strconv"
 	"strings"
 )
-
-var reader = bufio.NewReader(os.Stdin)
 
 const mainTitle = "BMI calculator"
 const separator = "--------------"

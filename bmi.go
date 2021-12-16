@@ -6,19 +6,16 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
+
+	"github.com/cariocaphil/bmi/info"
 )
 
-const mainTitle = "BMI calculator"
-const separator = "--------------"
-const weightPrompt = "Please enter your weight (kg): "
-const heightPrompt = "Please enter your height (m): "
-
 func main() {
-	fmt.Println(mainTitle)
-	fmt.Println(separator)
-	fmt.Println(weightPrompt)
+	fmt.Println(info.MainTitle)
+	fmt.Println(info.Separator)
+	fmt.Println(info.WeightPrompt)
 	weightInput, _ := reader.ReadString('\n')
-	fmt.Println(heightPrompt)
+	fmt.Println(info.WeightPrompt)
 	heightInput, _ := reader.ReadString('\n')
 
 	// Save that user input in variables

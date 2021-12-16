@@ -17,7 +17,7 @@ var reader = bufio.NewReader(os.Stdin)
 func getUserMetrics() (float64, float64) {
 	fmt.Println(info.WeightPrompt)
 	weightInput, _ := reader.ReadString('\n')
-	fmt.Println(info.WeightPrompt)
+	fmt.Println(info.HeightPrompt)
 	heightInput, _ := reader.ReadString('\n')
 
 	// Save that user input in variables
